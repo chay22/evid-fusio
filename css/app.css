@@ -1,14 +1,81 @@
+body {
+  font-family: Nunito, 'Roboto', "Open Sans", "Helvetica Neue", sans-serif;
+}
 
 .evid-menu > md-list {
   padding:0;
 }
 
 .evid-menu h3 {
-  font-family: 'Inconsolata', monospace;
+  /*font-family: 'Inconsolata', monospace;*/
+}
+
+.md-sidenav-left, md-sidenav {
+  background: #4d505b;
+  background: linear-gradient(to bottom, #4d505b 0%, #3b3e47 100%);
+}
+.md-subheader.md-default-theme, .md-subheader,
+md-content.md-default-theme, md-content,
+md-sidenav.md-default-theme, md-sidenav, md-sidenav.md-default-theme md-content, md-sidenav md-content {
+  background-color: transparent;
+}
+
+md-list md-list-item.md-2-line .md-list-item-text h3 {
+  color: #fff;
+}
+
+md-toolbar.md-default-theme.md-hue-2:not(.md-menu-toolbar) md-icon, md-toolbar.md-hue-2:not(.md-menu-toolbar) md-icon {
+    color: #252b7f;
+    fill: #252b7f;
+}
+
+md-icon.md-default-theme, md-icon {
+    color: rgba(255, 255, 255, 0.84);
+}
+@media (min-width: 800px) {
+  .md-toolbar-tools .md-button {
+    display: none;
+  }
+}
+md-sidenav {
+  width: 380px;
+}
+
+md-toolbar.md-default-theme.md-hue-2:not(.md-menu-toolbar), md-toolbar.md-hue-2:not(.md-menu-toolbar) {
+  background-color: #f3f3f3;
+  color: #546b82;
+  font-size: 1.5em;
+}
+
+.evid-menu .material-icons {
+  font-size: 19px;
+  margin-top: 2px;
+}
+
+md-list-item.md-2-line .md-list-item-text h3, md-list-item.md-2-line > .md-no-style .md-list-item-text h3, md-list-item.md-3-line .md-list-item-text h3, md-list-item.md-3-line > .md-no-style .md-list-item-text h3 {
+    font-size: 15px;
 }
 
 .md-list-item > md-icon:first-child:not(.md-avatar-icon), md-list-item .md-list-item-inner > md-icon:first-child:not(.md-avatar-icon) {
+  margin: 0;
   margin-right:16px;
+}
+.evid-menu md-list-item.md-2-line, md-list-item.md-2-line > .md-no-style {
+  min-height: 28px;
+}
+
+.evid-menu md-list-item, md-list-item .md-list-item-inner {
+  min-height: 28px;
+}
+
+.evid-menu .md-button {
+  min-height: 28px;
+  line-height: 28px;
+}
+
+.evid-menu md-list-item.md-2-line::before,
+.evid-menu md-list-item.md-2-line > .md-no-style::before {
+  min-height: 28px;
 }
 
 .evid-api-version {
